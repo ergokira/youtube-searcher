@@ -19,7 +19,7 @@ class App extends Component {
             selectedVideo: null
         };
         
-        this.videoSearch('overwatch');
+        this.videoSearch('react js');
     }
     
     videoSearch(term){
