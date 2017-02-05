@@ -1,3 +1,7 @@
+body{
+    background-image: url("../img/bg.png");
+}
+
 .search-bar {
     margin: 20px;
     text-align: center;
@@ -12,17 +16,36 @@
     max-width: 64px;
 }
 
-.video-details .details {
+.item-detail .details {
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    color: #eee;
 }
 
-.list-group-item {
+.item-detail .details .item-title {
+    color: #48cfff;
+}
+
+ul > li.list-group-item {
     cursor: pointer;
+    background-color: transparent;
+    color: #eee;
 }
 
 .list-group-item:hover {
-    background-color: #eee;
+    color: #48cfff;
+    transition: all 0.7s;
+}
+
+.list-group-item:hover img {
+  opacity: 0.5;
+}
+
+@media(max-width: 992px){
+    .row ul.list-group
+    {
+        padding-left: 15px;
+    }
 }

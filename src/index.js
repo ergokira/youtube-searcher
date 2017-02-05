@@ -36,15 +36,19 @@ class App extends Component {
         const videoSearch = _.debounce((term) => {this.videoSearch(term) }, 300);
         
         return	(
-            <div>
-                <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
-                <ItemDetails item={this.state.selectedVideo} />
-                <List     
-                    onItemSelect={selectedVideo => this.setState({selectedVideo})} 
-                    items={this.state.videos}  />
+            <div className="container">
+                <div className="row">
+                    <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+                </div>
+                <div className="row">
+                    <ItemDetails item={this.state.selectedVideo} />
+                    <List     
+                        onItemSelect={selectedVideo => this.setState({selectedVideo})} 
+                        items={this.state.videos}  />
+                </div>
             </div>
         );    
     }
 };
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector('.wraper'));
