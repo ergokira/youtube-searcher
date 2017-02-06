@@ -7,12 +7,17 @@ class SearchBar extends Component {
         
         this.state = {term:  '' };
     }
+    componentDidMount(){
+        this.nameInput.focus();
+    }
     
     render(){
         return (
-            <div className="search-bar">
+            <div className="search-bar col-md-12">
                 <input 
                     value={this.state.term}
+                    placeholder="Search"
+                    ref={(input) => { this.nameInput = input; }}
                     onChange={(event) => this.onInputChange(event.target.value)} />
             </div>       
         );   

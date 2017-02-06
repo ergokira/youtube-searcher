@@ -11,7 +11,7 @@ const List = (props) => {
             item={item} />);
     });
     return (
-        <ul className="col-md-4 list-group">
+        <ul className="col-md-12 col-lg-4 list-group">
         {listItems}
         </ul>
     );
