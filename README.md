@@ -7,7 +7,7 @@ Simple app to search videos from Youtube using Youtube search API
 Copy and checkout this project, install dependencies, then start the process with the following steps:
 
 ```
-	> git clone https://github.com/ergokira/youtube-searcher.git
+	> git clone https://github.com/josuegb15/youtube-searcher.git
 	> cd youtube-searcher
 	> npm install
 	> npm start
